@@ -63,6 +63,7 @@ body * {
 	object-fit: cover;
 	outline: 2px solid var(--stroke-color);
 	outline-offset: -2px;
+	filter: contrast(90%) brightness(95%);
 }
 
 #profile p {

@@ -1,6 +1,7 @@
 /* 
-    declarations: property and its values 
+    selectors, declarations, property and its values 
 */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,6 +16,8 @@
 	--surface-color-hover: rgba(255, 255, 255, 0.05);
 	--highlight-color: rgba(255, 255, 255, 0.2);
 	--switch-bg-url: url(./assets/moon-stars.svg);
+	--img-filter: sepia(20%) hue-rotate(-50deg) saturate(120%) contrast(90%)
+		brightness(80%);
 }
 
 .light {
@@ -25,6 +28,8 @@
 	--surface-color-hover: rgba(0, 0, 0, 0.02);
 	--highlight-color: rgba(0, 0, 0, 0.1);
 	--switch-bg-url: url(./assets/sun.svg);
+	--img-filter: sepia(30%) hue-rotate(0deg) saturate(150%) contrast(75%)
+		brightness(110%);
 }
 
 body {
@@ -63,7 +68,7 @@ body * {
 	object-fit: cover;
 	outline: 2px solid var(--stroke-color);
 	outline-offset: -2px;
-	filter: contrast(90%) brightness(95%);
+	filter: var(--img-filter);
 }
 
 #profile p {

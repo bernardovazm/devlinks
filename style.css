@@ -45,7 +45,8 @@ body * {
 }
 
 #container {
-	width: 360px;
+	width: 100%;
+	max-width: 588px;
 	/* shorthand: 
         margin: top right bottom left (clockwise) 
     */
